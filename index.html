@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <body>
+        <h1 id="title">Tyler, The Creator Fan Survey</h1>
+            <p id="description">Thank you for taking our survey.</p>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">
+                    What is your name? :
+                    <input id="name" type="text" placeholder="your name goes here" required>
+                </label>
+                <label id="email-label">
+                    What's your mail? :
+                    <input id="email" type="email" placeholder="put your email here" required> 
+                </label>
+                <label id="number-label" type="number">
+                    What is your age? (optional)
+                    <input id="number" type="number" min="12" max="95" placeholder="your age"> </label>
+                <label id="dropdown-label" for="dropdown">
+                    What is your occupation?
+                    <select id="dropdown" required>
+                    <option>Choose an option</option>
+                    <option>Unoccupied</option>
+                    <option>Students</option>
+                    <option>Part-Time</option>
+                    <option>Full-Time</option>
+                    <option>Others</option>
+                    </select>
+                </label>
+
+                <label id="radiobutton-label" for="radiobutton">
+                    How many of Tyler's songs do you know?
+                </label>
+                <label>
+                    <input id="radiobutton" type="radio" name="recommend" class="inline" value="recommend">
+                    0
+                </label>
+                <label>
+                    <input id="radiobutton" type="radio" name="recommend" class="inline" value="recommend">
+                    1-5
+                </label><label>
+                    <input id="radiobutton" type="radio" name="recommend" class="inline" value="recommend">
+                    6-10
+                </label><label>
+                    <input id="radiobutton" type="radio" name="recommend" class="inline" value="recommend">
+                    11-20
+                </label><label>
+                    <input id="radiobutton" type="radio" name="recommend" class="inline" value="recommend">
+                    21-30
+                </label>
+            </div>
+            
+            <div class="form-group">
+                <label id="albums-label" for="checkbox">
+                    Which Tyler's Albums do you like the most? (check all that apply)
+                </label>
+                
+                <label><input id="albums" type="checkbox" class="checkbox" value="goblin">
+                    Goblin
+                </label>
+
+                <label><input id="albums" type="checkbox" class="checkbox" value="wolf">
+                    Wolf
+                </label>
+            
+                <label><input id="albums" type="checkbox" class="checkbox" value="liveatsplash">
+                    Live At Splash!
+                </label>
+
+                <label><input id="albums" type="checkbox" class="checkbox" value="cherrybomb">
+                    Cherry Bomb
+                </label>
+
+                <label><input id="albums" type="checkbox" class="checkbox" value="flowerboy">
+                    Flower Boy
+                </label>
+
+                <label><input id="albums" type="checkbox" class="checkbox" value="igor">
+                    Igor
+                </label>
+
+                <label><input id="albums" type="checkbox" class="checkbox" value="cmiygl">
+                    Call Me If You Get Lost
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label>
+                    Do you have any opinion about Tyler, The Creator?
+                    <textarea id="opinion" placeholder="Your opinion about Tyler, The Creator" rows="3" cols="30"></textarea>
+                </label>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+</body>
+</html>
